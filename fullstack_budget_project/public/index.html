@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>small project - JS</title>
+    <link rel="stylesheet" type="text/css" href="budget.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+    <header id="alert"></header>
+    <section id="headDIV">
+        <div id="monthDiv">Available Budget In </div>
+        <div id="balanceDiv">Balance</div>
+        <div id="income">
+            <span><strong>INCOME</strong></span><span id="incomeValue" type="number"></span>
+
+        </div>
+        <div id="expenses">
+            <span><STRONG>EXPENSES</STRONG></span><span id="expensesValue" type="number"></span>
+
+    </section>
+    <!-- --שורת קלט -->
+    <div id="input_line">
+
+        <select size="2" id="selectPlusMinus">
+            <option onclick="green()">+</option>
+            <option onclick="red()">-</option>
+        </select>
+        <input id="description_Input" type="text" placeholder="add description">
+        <input id="amountInput" type="number" placeholder="Amount">
+        <i onclick="add()" id="check_symbol" class="material-icons">check_circle_outline</i>
+    </div>
+
+    <div id="incomeDiv">
+        <h2>INCOMES</h2>
+        <ul id="incomeList">
+        </ul>
+
+    </div>
+    <div id="expenses_list">
+        <h2>EXPENSES</h2>
+        <ul id="outcomeList">
+
+        </ul>
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+<!-- 1.HANDLE ERRORS
+        2.HANDLE BAD ROUTE
+            3.HANDLE TOTAL INCOME/OUTCOME -->
