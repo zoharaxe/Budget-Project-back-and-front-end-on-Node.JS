@@ -1,4 +1,4 @@
-# Web Budget App Project
+# Web Budget App Project - Manual
 
 - At the top you can see the present budget month and the sum of your incomes and expenses.
 - Select "-" or "+" (expense or income accordingly) before insert your values .
